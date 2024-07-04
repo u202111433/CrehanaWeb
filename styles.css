@@ -1,0 +1,136 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    background-color: #4F3F84;
+    padding: 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2em;
+}
+
+footer {
+    background-color: #4F3F84;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 0.5em;
+}
+
+/* Hero Section */
+#home {
+    background-color: #FFA22A;
+    text-align: center;
+}
+
+.hero-video {
+    margin: 1em auto;
+    width: 80%;
+}
+
+.service-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+#services {
+    background-color: #FF662A;
+    color: white;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #FFA22A;
+    color: #82AC26;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form input, #contact form textarea {
+    width: 80%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+#contact form button {
+    padding: 0.5em 2em;
+    background-color: #4F3F84;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+}
+
+/* Login Page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFA22A;
+}
+
+.login-box {
+    background-color: #4F3F84;
+    padding: 2em;
+    border-radius: 1em;
+    text-align: center;
+    color: white;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box form label {
+    margin: 0.5em 0;
+}
+
+.login-box form input {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    width: 100%;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.login-box form button {
+    padding: 0.5em 2em;
+    background-color: #82AC26;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
