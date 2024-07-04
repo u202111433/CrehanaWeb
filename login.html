@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Iniciar sesión en CrehanaWeb.">
-    <meta name="author" content="U202111433">
     <title>Iniciar Sesión - CrehanaWeb</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <div class="login-container">
-        <div class="login-box">
-            <h1>LOGIN</h1>
-            <form>
-                <label for="username">USERNAME</label>
-                <input type="text" id="username" name="username">
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password">
-                <button type="submit">Iniciar Sesión</button>
-            </form>
-            <p>Don’t have an account? <a href="#">Sign Up</a></p>
-        </div>
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Entrar</button>
+        </form>
     </div>
-    <script src="assets/js/scripts.js"></script>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Aquí puedes agregar la lógica de autenticación
+            // Redirige al landing page después de iniciar sesión
+            window.location.href = 'index.html';
+        });
+    </script>
 </body>
 </html>
+
 
